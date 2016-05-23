@@ -22,25 +22,21 @@ The purpose is making the script easier for everyone and with no xml to run Test
 		@URL("http://www.baidu.com")
 		public class BaiduPage extends PageObject {
 
-    		@FindBy(name = "wd")
-    		private WebElement key;
-
-    		public BaiduPage(WebDriver webDriver) {
-        		super(webDriver);
-    		}	
-
-    		public void type(String using) {
-        		key.sendKeys(using);
-    		}
+	    		@FindBy(name = "wd")
+	    		private WebElement key;
+	
+	    		public BaiduPage(WebDriver webDriver) {
+	        		super(webDriver);
+	    		}	
+	
+	    		public void type(String using) {
+	        		key.sendKeys(using);
+	    		}
 		}
 
 		@Use
 		public class BaiduSuite extends BaseSuite {
 
-    			public BaiduSuite(){
-
-    			}
-    		
 			@Page
     			private BaiduPage baidu;
 

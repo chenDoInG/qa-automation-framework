@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [测试suite]">
-  <test name="测试test - class ultron.BaiduSuite">
-    <classes>
-      <class name="ultron.BaiduSuite"/>
-    </classes>
-  </test> <!-- 测试test - class ultron.BaiduSuite -->
-</suite> <!-- Failed suite [测试suite] -->

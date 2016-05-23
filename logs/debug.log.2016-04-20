@@ -1,0 +1,123 @@
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+click
+open [http://www.baidu.com]
+finding element by [By.linkText: 测试]
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+open [http://www.baidu.com]
+finding element by [By.linkText: 测试]
+测试
+测试
+测试
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+测试
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+open [http://www.baidu.com]
+finding element by [By.linkText: 测试]
+测试
+测试2
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+测试
+测试2
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+open [http://www.baidu.com]
+finding element by [By.linkText: 测试]
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+click
+open [http://www.baidu.com]
+finding element by [By.linkText: 测试]
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+getDesc
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+finding element by [By.name: wd]
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+测试
+open [http://www.baidu.com]
+finding element by [By.linkText: 测试]
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+测试2
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+正在执行测试方法[click],方法描述为[测试]
+open [http://www.baidu.com]
+finding element by [By.linkText: 测试]
+Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver
+Exporting webdriver.chrome.driver as /Users/chenDoInG/.m2/repository/webdriver/chromedriver/mac32/2.21/chromedriver
+正在执行测试方法[getDesc],方法描述为[测试2]

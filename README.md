@@ -40,10 +40,10 @@ The purpose is making the script easier for everyone and with no xml to run Test
 			@Page
     			private BaiduPage baidu;
 
-    			@Test(description = "测试",dependsOnMethods = "getDesc")
+    			@Test(description = "test",dependsOnMethods = "getDesc")
     			public void click() {
         			baidu.open();
-        			baidu.type("测试");
+        			baidu.type("test");
     			}
 
 		}
@@ -57,6 +57,6 @@ The purpose is making the script easier for everyone and with no xml to run Test
     			@Test
     			public void searchInBaidu(){
         			baiduSuite.click();
-        			System.out.println("继续执行了");
+        			System.out.println("continue");
     			}		
 		}

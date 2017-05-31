@@ -14,6 +14,26 @@ public class LoggerHandler implements WebDriverEventListener {
     private final static Logger logger = LoggerFactory.getLogger(LoggerHandler.class);
 
     @Override
+    public void beforeAlertAccept(WebDriver driver) {
+
+    }
+
+    @Override
+    public void afterAlertAccept(WebDriver driver) {
+
+    }
+
+    @Override
+    public void afterAlertDismiss(WebDriver driver) {
+
+    }
+
+    @Override
+    public void beforeAlertDismiss(WebDriver driver) {
+
+    }
+
+    @Override
     public void beforeNavigateTo(String url, WebDriver driver) {
 
     }
@@ -73,12 +93,12 @@ public class LoggerHandler implements WebDriverEventListener {
     }
 
     @Override
-    public void beforeChangeValueOf(WebElement element, WebDriver driver) {
+    public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
         element.clear();
     }
 
     @Override
-    public void afterChangeValueOf(WebElement element, WebDriver driver) {
+    public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
         logger.info("type [{}] to element [{}]", element.getAttribute("value"), getWebElementContent(element));
     }
 

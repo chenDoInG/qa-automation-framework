@@ -1,9 +1,9 @@
 package ultron;
 
+import org.testng.annotations.Test;
 import ultron.driver.Use;
 import ultron.listerner.BaseSuite;
 import ultron.listerner.Page;
-import org.testng.annotations.Test;
 
 @Use
 public class BaiduSuite extends BaseSuite {
@@ -11,6 +11,7 @@ public class BaiduSuite extends BaseSuite {
     public BaiduSuite(){
 
     }
+
     @Page
     private BaiduPage baidu;
 

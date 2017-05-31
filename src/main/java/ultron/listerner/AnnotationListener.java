@@ -1,10 +1,11 @@
 package ultron.listerner;
 
-import ultron.driver.Use;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.*;
+import ultron.driver.Use;
+import ultron.driver.WebDriverFactory;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -23,7 +24,7 @@ public class AnnotationListener implements ISuiteListener, IClassListener, IInvo
     @Override
     public void onFinish(ISuite suite) {
         if (webDriver != null) {
-            logger.info("关闭浏览器:"+webDriver.toString());
+            logger.info("关闭浏览器:" + webDriver.toString());
             webDriver.quit();
         }
     }
@@ -34,8 +35,12 @@ public class AnnotationListener implements ISuiteListener, IClassListener, IInvo
         while (want != Object.class && !want.isAnnotationPresent(Use.class)) {
             want = want.getSuperclass();
         }
-        Use driver = want.getAnnotation(Use.class);
-        webDriver = driver.value().create();
+        if (want != Object.class) {
+            webDriver = want.getAnnotation(Use.class).value().create();
+        } else {
+            webDriver = WebDriverFactory.Chrome.create();
+        }
+
 
         Stream.of(mi.getInstance().getClass().getDeclaredFields()).forEach(field -> {
             if (field.isAnnotationPresent(Page.class)) {
@@ -56,13 +61,12 @@ public class AnnotationListener implements ISuiteListener, IClassListener, IInvo
                 }
             }
         });
-
     }
 
     @Override
     public void onAfterClass(ITestClass testClass, IMethodInstance mi) {
         if (webDriver != null) {
-            logger.info("关闭浏览器:"+webDriver);
+            logger.info("关闭浏览器:" + webDriver);
             webDriver.quit();
         }
     }

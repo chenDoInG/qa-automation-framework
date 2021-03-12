@@ -17,12 +17,11 @@ import java.util.List;
 
 public class SuiteProxy implements MethodInterceptor {
 
-    private Enhancer enhancer = new Enhancer();
+    private final Enhancer enhancer = new Enhancer();
 
     public SuiteProxy(Class<?> clazz) {
         enhancer.setSuperclass(clazz);
         enhancer.setCallback(this);
-        //noinspection unchecked
     }
 
     public Object getProxy() {
@@ -48,7 +47,6 @@ public class SuiteProxy implements MethodInterceptor {
         XmlClass testClass = new XmlClass(clazz);
         List<XmlInclude> includes = new ArrayList<>();
         fillIncludesWithAllDependsOnMethods(clazz, methodName, includes);
-//        testClass.setIncludedMethods(Collections.singletonList(new XmlInclude(methodName)));
         test.setXmlClasses(Collections.singletonList(testClass));
 
         return suite;

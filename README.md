@@ -10,7 +10,7 @@ The purpose is making the script easier for everyone and with no xml to run Test
 
 ## Usage
 
-  1. 		git clone git@github.com:chenDoInG/qa-automation-framework.git
+  1. git clone git@github.com:chenDoInG/qa-automation-framework.git
   2. import into your ideas
   3. mvn clean install
   4. create an new maven project or gradle project
@@ -37,26 +37,26 @@ The purpose is making the script easier for everyone and with no xml to run Test
 		@Use
 		public class BaiduSuite extends BaseSuite {
 
-			@Page
-    			private BaiduPage baidu;
-
-    			@Test(description = "test",dependsOnMethods = "getDesc")
-    			public void click() {
-        			baidu.open();
-        			baidu.type("test");
-    			}
+                @Page
+                private BaiduPage baidu;
+    
+                @Test(description = "test",dependsOnMethods = "getDesc")
+                public void click() {
+                    baidu.open();
+                    baidu.type("test");
+                }
 
 		}
 		
 		@Use(WebDriverFactory.FireFox)
 		public class GoogleSuite extends BaseSuite{
 
-    			@Suite(invokeDependsOn = true)
-    			private BaiduSuite baiduSuite;
-
-    			@Test
-    			public void searchInBaidu(){
-        			baiduSuite.click();
-        			System.out.println("continue");
-    			}		
+                @Suite(invokeDependsOn = true)
+                private BaiduSuite baiduSuite;
+    
+                @Test
+                public void searchInBaidu(){
+                    baiduSuite.click();
+                    System.out.println("continue");
+                }		
 		}

@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 
 public class AnnotationListener implements ISuiteListener, IClassListener, IInvokedMethodListener {
 
-    private static Logger logger = LoggerFactory.getLogger(AnnotationListener.class);
+    private static final Logger logger = LoggerFactory.getLogger(AnnotationListener.class);
 
     private WebDriver webDriver;
 
@@ -24,7 +24,7 @@ public class AnnotationListener implements ISuiteListener, IClassListener, IInvo
     @Override
     public void onFinish(ISuite suite) {
         if (webDriver != null) {
-            logger.info("关闭浏览器:" + webDriver.toString());
+            logger.info("关闭浏览器:" + webDriver);
             webDriver.quit();
         }
     }
@@ -45,7 +45,7 @@ public class AnnotationListener implements ISuiteListener, IClassListener, IInvo
         Stream.of(mi.getInstance().getClass().getDeclaredFields()).forEach(field -> {
             if (field.isAnnotationPresent(Page.class)) {
                 try {
-                    Constructor constructor = field.getType().getConstructor(WebDriver.class);
+                    Constructor<?> constructor = field.getType().getConstructor(WebDriver.class);
                     field.setAccessible(true);
                     field.set(mi.getInstance(), constructor.newInstance(webDriver));
                 } catch (IllegalArgumentException | IllegalAccessException | InstantiationException | NoSuchMethodException | InvocationTargetException e) {
